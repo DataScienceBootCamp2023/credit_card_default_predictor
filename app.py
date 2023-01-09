@@ -54,7 +54,7 @@ def predictRoute():
         pay_amt_6 = float(request.form['pay_amt_6'])
         
         
-         print('Here 5')
+        print('Here 5')
         # data = request.json['data']
         data = {'limit_bal':limit_bal,'sex':sex,'education':education,
                 'marriage':marriage,'age':age,
