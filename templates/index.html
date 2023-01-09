@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Welcome Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Predict Credit Card Default Status</h1>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="text" name="limit_bal" id="limit_bal" placeholder="limit_bal">
+            <input type="text" name="sex" id="sex" placeholder="sex">
+            <input type="text" name="education" id="education" placeholder="education">
+            <input type="text" name="marriage" id="marriage" placeholder="marriage">
+			 <input type="text" name="age" id="age"placeholder="age">
+            <input type="text" name="pay_1" id="pay_1" placeholder="pay_1">
+            <input type="text" name="pay_2" id="pay_2"placeholder="pay_2">
+            <input type="text" name="pay_3" id="pay_3"placeholder="pay_3">
+          	<input type="text" name="pay_4" id="pay_4" placeholder="pay_4">
+            <input type="text" name="pay_5" id="pay_5" placeholder="pay_5">
+            <input type="text" name="pay_6" id="pay_6" placeholder="pay_6">
+            <input type="text" name="bill_amt_1" id="bill_amt_1" placeholder="bill_amt_1">
+		    <input type="text" name="bill_amt_2" id="bill_amt_2" placeholder="bill_amt_2">
+            <input type="text" name="bill_amt_3" id="bill_amt_3"placeholder="bill_amt_3">
+            <input type="text" name="bill_amt_4" id="bill_amt_4"placeholder="bill_amt_4">
+            <input type="text" name="bill_amt_5" id="bill_amt_5"placeholder="bill_amt_5">
+			<input type="text" name="bill_amt_6" id="bill_amt_6" placeholder="bill_amt_6">
+            <input type="text" name="pay_amt_1" id="pay_amt_1" placeholder="pay_amt_1">
+            <input type="text" name="pay_amt_2" id="pay_amt_2" placeholder="pay_amt_2">
+            <input type="text" name="pay_amt_3" id="pay_amt_3" placeholder="pay_amt_3">
+            <input type="text" name="pay_amt_4" id="pay_amt_4" placeholder="pay_amt_4">
+            <input type="text" name="pay_amt_5" id="pay_amt_5"placeholder="pay_amt_5">
+            <input type="text" name="pay_amt_6" id="pay_amt_6"placeholder="pay_amt_6">
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</div>
+{% endblock %}
