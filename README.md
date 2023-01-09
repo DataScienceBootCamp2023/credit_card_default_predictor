@@ -73,8 +73,8 @@ Make sure that you have the python 3 or above installed on your laptop. Your lap
 
 - create a virtual environment (optional). let's say the virtual environment's name is "creditcardproject". `virtualenv creditcardproject` (optional)
 - activate the virtualevn `source creditcardproject/bin/activate` (optional)
-- clone the github repository `git@github.com:zjgcainiao/ML_CreditCardDefaultPrediction.git`
-- on the terminal (Mac OS), navigate to the current project folder. it should look like `xxx-MacBook-Pro:ML_CreditCardDefaultPrediction:(username)$:`.
+- clone the github repository `git@github.com:DataScienceBootCamp2023/credit_card_default_predictor.git`
+- on the terminal (Mac OS), navigate to the current project folder. it should look like `xxx-MacBook-Pro:credit_card_default_predictor:(username)$:`.
 - install libraries `pip install -r requirements.txt`
 - create a mysql database locally or remotely.
 - make a copy of `.env.example` rename it to `.env`.
@@ -85,13 +85,13 @@ Make sure that you have the python 3 or above installed on your laptop. Your lap
 - after connecting the database, using the database varibales from the real .env setup (Slack channel fpg4 group)
 - run the command on a terminal `flask run` or `python app.py`
 - visit the http://127.0.0.1:5000/
-- visit the site in the presentation mode at: <http://127.0.0.1:5000/presentation?transition=concave#/>
+- visit the site in the presentation mode at: <#/>
 
 ### 2. Deployment to Elastic Beanstalk
 
 Here are the steps
 
-- clone the github repository `git@github.com:zjgcainiao/ML_CreditCardDefaultPrediction.git`
+- clone the github repository `git@github.com:DataScienceBootCamp2023/credit_card_default_predictor.git`
 - navigate the current folder,make a compressed file of all source files. An example is `creditcardsource_v01.zip`.
 - Create and AWS account and login in the AWS Elastic Beanstalk website.
 - create a Elastic Beanstalk environment.
