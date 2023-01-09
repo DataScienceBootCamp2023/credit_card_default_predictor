@@ -21,10 +21,10 @@ class predObj:
         predict = model.predict(scaled_data)
         print(predict)
         if predict[0] ==1 :
-            result = 'Diabetic'
+            result = 'Defaultor'
             print(result)
         else:
-            result ='Non-Diabetic'
+            result ='Non-Defaultor'
             print(result)
         return result
 
