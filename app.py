@@ -69,6 +69,8 @@ def predictRoute():
 				return response
 			except ValueError:
 				return jsonify({'error': 'Invalid input data. Please check your input and try again.'})
+		else:
+            		return jsonify({'error': 'Expected a JSON request'})	
 	except Exception as e:
 		return jsonify({'error': str(e)})
 
