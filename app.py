@@ -67,7 +67,7 @@ def predictRoute():
 				print('Input data is:     ', input_data)
 
 						# Make the prediction using the model
-						pred=predObj()
+				pred=predObj()
 				prediction = pred.predict_log(input_data)
 				#result = clntApp.predObj.predict_log(data)
 				print('result is        ',prediction)
