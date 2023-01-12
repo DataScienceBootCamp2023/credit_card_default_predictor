@@ -1,3 +1,4 @@
+import os
 from wsgiref import simple_server
 from flask import Flask, request,render_template, jsonify
 from flask import Response
@@ -82,8 +83,9 @@ def predictRoute():
     except:
         return jsonify({'trace': traceback.format_exc()})
 
-port = int(os.getenv("PORT"))
+
 if __name__ == "__main__":
+    port = int(os.getenv("PORT"))
     app.run(host='0.0.0.0', port=port)
 
 """
