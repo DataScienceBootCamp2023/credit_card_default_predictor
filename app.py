@@ -30,7 +30,7 @@ def predictRoute():
 		if request.is_json:
 			data = request.json
 			try:
-				limit_bal = float(data['Limit_bal'])
+				limit_bal = float(data['limit_bal'])
 				male = float(data['male'])
 				female = float(data['female'])
 				grad_school = float(data['grad_school'])
