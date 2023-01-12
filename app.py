@@ -26,7 +26,7 @@ def homePage():
 @app.route("/predict", methods=['POST'])
 def predictRoute():
     try:
-       # print('Here 4')
+        print('Here 4')
 
         #if request.json['data'] is not None:
         limit_bal = float(request.form['Limit_bal'])
@@ -60,10 +60,10 @@ def predictRoute():
         pay_amt_6 = float(request.form['pay_amt_6'])
 
        
-       # print('Here 5')
+        print('Here 5')
         # data = request.json['data']
-        data = {'limit_bal':limit_bal,'sex':sex,'education':education,
-                'marriage':marriage,'age':age,
+        data = {'limit_bal':limit_bal,'male':male,'female':female,'grad_school':grad_school,'university':university,'high_school':high_school,'edu_others':edu_others,
+                'married':married,'single':single,'marriage_others':marriage_others,'age':age,
                 'pay_1':pay_1,'pay_2':pay_2,'pay_3':pay_3,'pay_4':pay_4,'pay_5':pay_5,
                 'pay_6':pay_6,'bill_amt_1':bill_amt_1,
                 'bill_amt_2':bill_amt_2,'bill_amt_3':bill_amt_3,'bill_amt_4':bill_amt_4,'bill_amt_5':bill_amt_5,'bill_amt_6':bill_amt_6,
