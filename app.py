@@ -30,9 +30,15 @@ def predictRoute():
 
         #if request.json['data'] is not None:
         limit_bal = float(request.form['Limit_bal'])
-        sex = float(request.form['sex'])
-        education = float(request.form['education'])
-        marriage = float(request.form['marriage'])
+        male = float(request.form['male'])
+        female = float(request.form['female'])
+        grad_school = float(request.form['grad_school'])
+        university = float(request.form['university'])
+        high_school = float(request.form['high_school'])
+        edu_others = float(request.form['edu_others'])
+        married = float(request.form['married'])
+        single = float(request.form['single'])
+        marriage_others = float(request.form['marriage_others'])
         age = float(request.form['age'])
         pay_1 = float(request.form['pay_1'])
         pay_2 = float(request.form['pay_2'])
@@ -52,8 +58,8 @@ def predictRoute():
         pay_amt_4 = float(request.form['pay_amt_4'])
         pay_amt_5 = float(request.form['pay_amt_5'])
         pay_amt_6 = float(request.form['pay_amt_6'])
-        
-        
+
+       
         print('Here 5')
         # data = request.json['data']
         data = {'limit_bal':limit_bal,'sex':sex,'education':education,
