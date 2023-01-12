@@ -22,7 +22,7 @@ class ClientApi:
 @cross_origin()
 def homePage():
 
-    return render_template("index.html")
+    return render_template("templates/index.html")
 
 @app.route("/predict", methods=['POST'])
 def predictRoute():
