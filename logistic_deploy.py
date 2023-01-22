@@ -7,11 +7,11 @@ from flask import Flask, render_template
 class predObj:
 
     def predict_log(self, dict_pred):
-        with open("standardScalar_Logistic_Prediction.sav", 'rb') as f:
+        with open("standardScalar_Logistic_Prediction.pkl", 'rb') as f:
             #print('Inside Scalar')
             scalar = pickle.load(f)
 
-        with open("model_For_Logistic_Prediction.sav", 'rb') as f:
+        with open("model_For_Logistic_Prediction.pkl", 'rb') as f:
             #print('INside Model')
             model = pickle.load(f)
         data_df = pd.DataFrame(dict_pred,index=[1,])
